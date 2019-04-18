@@ -19,6 +19,7 @@ function handleVisibilityChange() {
   if (document[hidden]) {
     clearInterval(interval);
   } else {
+    findBanner();
     var interval = setInterval(findBanner, 500);
   }
 }
