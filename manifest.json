@@ -1,0 +1,22 @@
+{
+    "name": "Last Pass Banner Be Gone",
+    "short_name": "Last Pass Banner Be Gone",
+    "version": "0.1",
+    "description": "Prevents last pass's red banner from being displayed",
+    "permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "content_scripts":[
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js":["contentScript.js"]
+      }
+    ],
+    "browser_action": {
+      "default_title": "Last Pass Banner Be Gone",
+      "default_icon": {}
+    },
+    "manifest_version": 2
+  }
+  
