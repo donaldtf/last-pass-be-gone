@@ -4,6 +4,7 @@
     "version": "0.1",
     "description": "Prevents last pass's red banner from being displayed",
     "permissions": [
+      "storage",
       "http://*/*",
       "https://*/*"
     ],
@@ -14,6 +15,7 @@
       }
     ],
     "browser_action": {
+      "default_popup": "popup/popup.html",
       "default_title": "Last Pass Banner Be Gone",
       "default_icon": {}
     },
